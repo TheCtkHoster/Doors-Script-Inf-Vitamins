@@ -4,6 +4,7 @@ local Window = OrionLib:MakeWindow({
     HidePremium = false,
     IntroEnabled = true,
     IntroText = "Infinite Vitamins",
+    IntroIcon: "https://tr.rbxcdn.com/dc9a6986b6fd26a2efb00d03c77d8394/420/420/Decal/Png"
     SaveConfig = true, 
     ConfigFolder = "Inf-Vitamins"
 })
