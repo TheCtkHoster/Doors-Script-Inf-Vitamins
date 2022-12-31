@@ -14,10 +14,13 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 
+--#region Vitamins
+_G.VitaminsDurability = 0
+
 Tab:AddButton({
 	Name = "Obtain Vitamins",
 	Callback = function()
-        local Vitamins = game:GetObjects("rbxassetid://11576679033")[1]
+        local Vitamins = game:GetObjects("rbxassetid://11673189752")[1]
 		local idle = Vitamins.Animations:FindFirstChild("idle")
 		local open = Vitamins.Animations:FindFirstChild("open")
 		local tweenService = game:GetService("TweenService")
@@ -109,7 +112,7 @@ Tab:AddBind({
 	Default = Enum.KeyCode.E,
 	Hold = false,
 	Callback = function()
-        local Vitamins = game:GetObjects("rbxassetid://11576679033")[1]
+        local Vitamins = game:GetObjects("rbxassetid://11673189752")[1]
 		local idle = Vitamins.Animations:FindFirstChild("idle")
 		local open = Vitamins.Animations:FindFirstChild("open")
 		local tweenService = game:GetService("TweenService")
